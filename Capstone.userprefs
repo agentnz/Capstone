@@ -1,10 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SunStone.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Moodswing.cs">
     <Files>
-      <File FileName="Assets\MoonStone.cs" Line="14" Column="1" />
-      <File FileName="Assets\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" Line="1" Column="1" />
-      <File FileName="Assets\SunStone.cs" Line="14" Column="1" />
+      <File FileName="Assets\Scripts\Moodswing.cs" Line="9" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
