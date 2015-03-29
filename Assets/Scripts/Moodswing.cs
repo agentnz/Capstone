@@ -3,17 +3,23 @@ using System.Collections;
 
 public class Moodswing : MonoBehaviour {
 	
-	public Light[] lightsOn, lightsOff;
-	public MeshRenderer[] meshesOn, meshesOff;
-	
+	//public GameObject objectHolder;
+	public ObjectLists objects;
+	//private ObjectLists objects = objectHolder.GetComponent<ObjectLists>();
+
 	void OnTriggerEnter(Collider other) {
-		foreach (Light light in lightsOn)
+		foreach (Light light in objects.lightsOn)
 			light.enabled = true;
-		foreach (Light light in lightsOff)
+		foreach (Light light in objects.lightsOff)
 			light.enabled = false;
-		foreach (MeshRenderer mesh in meshesOn)
+		foreach (MeshRenderer mesh in objects.meshesOn)
 			mesh.enabled = true;
-		foreach (MeshRenderer mesh in meshesOff)
+		foreach (MeshRenderer mesh in objects.meshesOff)
 			mesh.enabled = false;
+		/*foreach (Object obj in objsOn ) {
+			Light light = obj as Light;
+			if (light != null)
+				light.enabled = true;
+		}*/
 	}
 }
