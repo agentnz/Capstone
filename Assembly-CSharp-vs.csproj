@@ -46,8 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Props\Destructible Crate\Example\Scripts\Force.cs" />
+     <Compile Include="Assets\Props\Destructible Crate\Example\Scripts\Hit.cs" />
      <Compile Include="Assets\Scripts\Moodswing.cs" />
      <Compile Include="Assets\Scripts\ObjectLists.cs" />
+     <Compile Include="Assets\Scripts\Underwater.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">

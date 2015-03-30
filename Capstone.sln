@@ -7,6 +7,8 @@ Project("{C1D9154A-79CA-8FDA-7BD0-CECDDC25D17F}") = "Capstone", "Assembly-CSharp
 EndProject
 Project("{C1D9154A-79CA-8FDA-7BD0-CECDDC25D17F}") = "Capstone", "Assembly-UnityScript-firstpass.unityproj", "{278AD43E-62DF-E18B-65FB-9A0EFA776328}"
 EndProject
+Project("{C1D9154A-79CA-8FDA-7BD0-CECDDC25D17F}") = "Capstone", "Assembly-UnityScript.unityproj", "{29F4C722-B9D4-7BC5-D69F-D2316A1C2D80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{278AD43E-62DF-E18B-65FB-9A0EFA776328}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{278AD43E-62DF-E18B-65FB-9A0EFA776328}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{278AD43E-62DF-E18B-65FB-9A0EFA776328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F4C722-B9D4-7BC5-D69F-D2316A1C2D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F4C722-B9D4-7BC5-D69F-D2316A1C2D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F4C722-B9D4-7BC5-D69F-D2316A1C2D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F4C722-B9D4-7BC5-D69F-D2316A1C2D80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																									GlobalSection(MonoDevelopProperties) = preSolution
+																															GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
