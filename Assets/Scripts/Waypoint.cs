@@ -9,10 +9,9 @@ public class Waypoint : MonoBehaviour {
 	public GameObject player;
 	
 	void OnTriggerEnter(Collider other) {
-		if (i < waypoints.Length) {
-			transform.position = waypoints [i].position;
-			i++;
-		} else {
+		transform.position = waypoints [i].position;
+		i++;
+		if (i == waypoints.Length) {
 			gameWon = true;
 			player.GetComponent<CharacterMotor>().movement.gravity = 0;
 		}
