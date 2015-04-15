@@ -11993,7 +11993,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxForwardSpeed
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxSidewaysSpeed
@@ -12002,6 +12002,14 @@ Prefab:
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxBackwardsSpeed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: useFixedUpdate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
@@ -17601,7 +17609,7 @@ GameObject:
   - 114: {fileID: 1155493582}
   m_Layer: 0
   m_Name: First Person Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17649,7 +17657,7 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 10
+    maxForwardSpeed: 50
     maxSidewaysSpeed: 10
     maxBackwardsSpeed: 10
     slopeSpeedMultiplier:
@@ -19389,6 +19397,10 @@ Prefab:
     - target: {fileID: 400002, guid: 86e9f6bb23445c2418abce9d418b64a9, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 86e9f6bb23445c2418abce9d418b64a9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86e9f6bb23445c2418abce9d418b64a9, type: 2}
@@ -21569,6 +21581,7 @@ GameObject:
   - 4: {fileID: 1436146810}
   - 111: {fileID: 1436146809}
   - 136: {fileID: 1436146808}
+  - 114: {fileID: 1436146811}
   m_Layer: 0
   m_Name: Water well_Prefab
   m_TagString: Untagged
@@ -21583,12 +21596,12 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1436146807}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 6.36000013
-  m_Height: 19.5599995
+  m_Radius: 10.3599997
+  m_Height: 32.6599998
   m_Direction: 1
-  m_Center: {x: 0, y: 6.71000004, z: 0}
+  m_Center: {x: 0, y: 3.5999999, z: 0}
 --- !u!111 &1436146809
 Animation:
   m_ObjectHideFlags: 0
@@ -21618,6 +21631,24 @@ Transform:
   - {fileID: 458924933}
   m_Father: {fileID: 847945549}
   m_RootOrder: 8
+--- !u!114 &1436146811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1436146807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4b74a7cf7ee86045aa58c6740f32541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 45040363}
+  - {fileID: 1975889841}
+  - {fileID: 174076185}
+  - {fileID: 2083249806}
+  - {fileID: 1326921038}
+  player: {fileID: 1155493576}
 --- !u!1001 &1437512507
 Prefab:
   m_ObjectHideFlags: 0
@@ -26203,6 +26234,7 @@ GameObject:
   - 23: {fileID: 1834478520}
   - 198: {fileID: 1834478523}
   - 199: {fileID: 1834478522}
+  - 64: {fileID: 1834478524}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -27335,6 +27367,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!64 &1834478524
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1834478518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 56c3f2cbc110c05439c69b40ceb13e3a, type: 3}
 --- !u!1001 &1841119303
 Prefab:
   m_ObjectHideFlags: 0
